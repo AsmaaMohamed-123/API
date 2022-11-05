@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/all.min.css">
+</head>
+
+<body>
+    <!-- START NAVBAR -->
+    <section>
+        <div id="closeNav">
+            <div class="headerNav ">
+                <div class="logo ">
+                    <img src="images/logo (1).png" class="w-100 ">
+                </div>
+
+                <div>
+                    <i class="fa fa-align-justify fa-times Esc d-none  " id="close"></i> 
+                    <i class="fa fa-align-justify  Esc " id="open"> </i>
+                </div>
+
+
+                <div class="icon">
+                    <div>
+                        <span> <i class="fas fa-globe "></i></span>
+                    </div>
+                    <div>
+                        <div>
+                            <span> <i class=" fas fa-share-alt  "></i></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="navBar">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active pt-4 ps-4 " id="Search" aria-current="page" href="#">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pt-4 ps-4" id="Categories"  href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pt-4 ps-4" id="area" href="#">Area</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link pt-4 ps-4" id="Ingredients" href="#">Ingredients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pt-4 ps-4"id="Contact" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="socialItems ">
+                    <a>
+                        <i class="fa-brands fa-facebook "></i>
+                    </a>
+                    <a>
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a>
+                        <i class=" fas fa-globe"></i>
+                    </a>
+                    <p class="text-white ">Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+   
+
+<!-- SEAECH -->
+
+<section class="d-none" id="input">
+<div class="container mb-5"> 
+<div class="row d-flex pt-5">
+    <div class="col-6">
+        <input  id="searchInput" class="form-control  mb-2 bg-transparent text-white" placeholder="Search By Name">
+</div>
+
+    <div class="col-6">
+        <input id="letter" class="form-control mb-2 bg-transparent text-white" placeholder="Search By First letter" >
+
+</div>
+</div>
+</div>
+</section>
+<div  class=" d-flex align-items-center d-none" id="spinner" >
+<div class="sk-circle" >
+    <div class="sk-circle1 sk-child"></div>
+    <div class="sk-circle2 sk-child"></div>
+    <div class="sk-circle3 sk-child"></div>
+    <div class="sk-circle4 sk-child"></div>
+    <div class="sk-circle5 sk-child"></div>
+    <div class="sk-circle6 sk-child"></div>
+    <div class="sk-circle7 sk-child"></div>
+    <div class="sk-circle8 sk-child"></div>
+    <div class="sk-circle9 sk-child"></div>
+    <div class="sk-circle10 sk-child"></div>
+    <div class="sk-circle11 sk-child"></div>
+    <div class="sk-circle12 sk-child"></div>
+  </div>
+</div>
+  <div class="container area">
+    <div class="row  gy-4 gx-3 p-5 " id="my-row">
+        
+    </div>
+   </div>
+
+
+
+<section class="categories ">
+
+    
+</section>
+
+
+<!-- Contac -->
+<section id="contact" class="d-none" >
+    <div class="container">
+ <h2 class="text-white mb-5 text-center">ContacUs...</h2>
+ <div class="row m-auto d-flex justify-content-center">
+    <div class="col-md-6">
+        <div class="form-group">
+            <input class="form-control shadow bg-transparent text-white"  id="name" placeholder="Enter Your Name">
+            <div class="alert alert-danger d-none  mt-1" id="nameError">
+                Special Characters and Numbers not allowed
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <input class="form-control shadow bg-transparent text-white"  id="Email" placeholder="Enter Email" >
+            <div class="alert alert-danger d-none  mt-1" id="emailError">
+                Enter valid email. *Ex: xxx@yyy.zzz
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <input class="form-control shadow bg-transparent text-white"  id="phone" placeholder="Enter phone">
+            <div class="alert alert-danger d-none  mt-1"id="phoneError" >
+                Enter valid Phone Number
+             </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <input class="form-control shadow bg-transparent text-white"  id="age" placeholder="Enter age">
+            <div class="alert alert-danger d-none  mt-1" id="ageError">
+                Enter valid Age
+             </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <input class="form-control shadow bg-transparent text-white" type="password"  id="Password" placeholder="Enter Password">
+            <div class="alert alert-danger d-none  mt-1" id="passwordError" >
+                Enter valid password *Minimum eight characters, at least one letter and one number:*    
+              </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <input class="form-control shadow bg-transparent text-white "  type="password"  id="Repassword" placeholder="Enter Repassword">
+            <div class="alert alert-danger d-none  mt-1" id="RepasswordError">
+                Enter valid Repassword        
+          </div>
+        </div>
+    </div>
+
+ </div>
+
+    </div>
+    <div class="m-auto d-flex justify-content-center mt-3"><button type="submit" disabled="true" id="submitBtn" class="btn btn-outline-danger m-auto">Submit</button></div>
+
+    </div>
+</section>
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
